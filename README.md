@@ -1,0 +1,2 @@
+# clock-app
+An application with an analog as well as a digital clock. Buttons and functionality is available to reset time to the current system time and also increment/decrement the time shown on the clocks by 5 seconds, 5 minutes, or 5 hours. The application also gives the user the option to set the clocks to any timezone in the world (with a list of timezones/regions being provided to the user within a dropdown).
