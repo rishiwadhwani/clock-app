@@ -1,0 +1,8 @@
+<div mat-dialog-content>
+  <p>There has been no activity for the past 3 minutes.</p>
+  <p>you wish to continue on the application or be redirect?</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="closeDialogAndRedirect(false)">Continue</button>
+  <button mat-button (click)="closeDialogAndRedirect(true)">Redirect</button>
+</div>

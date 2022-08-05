@@ -1,0 +1,32 @@
+<div class="buttonsWrapper">
+  <div class="buttonsCard">
+    <div class="resetTimeButton">
+      <p class="label">Reset clocks to current Time:</p>
+      <button mat-raised-button class="timeButton" (click)="resetClocks()">Reset Clocks</button>
+    </div>
+    <div class="decrementButtons">
+      <p class="label">Subtract time:</p>
+      <button mat-raised-button class="timeButton" (click)="reduceFive('Seconds')">- 5 Seconds</button>
+      <button mat-raised-button class="timeButton" (click)="reduceFive('Minutes')">- 5 Minutes</button>
+      <button mat-raised-button class="timeButton" (click)="reduceFive('Hours')">- 5 Hours</button>
+    </div>
+    <div class="incrementButtons">
+      <p class="label">Add time:</p>
+      <button mat-raised-button class="timeButton" (click)="increaseFive('Seconds')">+ 5 Seconds</button>
+      <button mat-raised-button class="timeButton" (click)="increaseFive('Minutes')">+ 5 Minutes</button>
+      <button mat-raised-button class="timeButton" (click)="increaseFive('Hours')">+ 5 Hours</button>
+    </div>
+    <div class="worldTimeButtons">
+      <p class="label">Set clocks to world time:</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Time Zones</mat-label>
+        <mat-select [(value)]="timezone">
+          <mat-option *ngFor="let zone of worldTimeService.timezoneList" [value]="zone">
+            {{zone}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-raised-button class="timeButton" (click)="setTimezone()">Set Time</button>
+    </div>
+  </div>
+</div>

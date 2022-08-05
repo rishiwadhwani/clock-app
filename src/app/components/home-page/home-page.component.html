@@ -1,0 +1,9 @@
+<app-analog-clock></app-analog-clock>
+<br />
+<app-digital-clock
+  [hours]="timeService.currentAppTimeHours"
+  [minutes]="timeService.currentAppTimeMinutes"
+  [seconds]="timeService.currentAppTimeSeconds"
+></app-digital-clock>
+<br>
+<app-time-set-buttons></app-time-set-buttons>
