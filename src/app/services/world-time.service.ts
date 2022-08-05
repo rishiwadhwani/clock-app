@@ -10,7 +10,6 @@ export class WorldTimeService {
   timezoneList: any;
 
   constructor(private http: HttpClient, public timeService: TimeService) {
-    console.log('in world time service constructor');
     const timezoneSub = this.http.get('https://worldtimeapi.org/api/timezone').subscribe((data: any) => {
       this.timezoneList = data;
       timezoneSub.unsubscribe();
