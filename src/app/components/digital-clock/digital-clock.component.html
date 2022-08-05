@@ -1,0 +1,18 @@
+<div class="digitalClockCard">
+  <div class="digitalClockFace">
+    <div class="hoursSection">
+      <p class="label">Hours</p>
+      <p class="timeDigits">{{ hours | number: "2.0-0" }}</p>
+    </div>
+    <div class="timeSeparator">:</div>
+    <div class="minutesSection">
+      <p class="label">Minutes</p>
+      <p class="timeDigits">{{ minutes | number: "2.0-0" }}</p>
+    </div>
+    <div class="timeSeparator">:</div>
+    <div class="secondsSection">
+      <p class="label">Seconds</p>
+      <p class="timeDigits">{{ seconds | number: "2.0-0" }}</p>
+    </div>
+  </div>
+</div>

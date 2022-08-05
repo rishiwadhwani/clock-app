@@ -1,0 +1,61 @@
+.digitalClockCard {
+  background-color: white;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.digitalClockFace {
+  position: relative;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  border: solid 5px black;
+  padding: 5px
+}
+
+.hoursSection,
+.minutesSection,
+.secondsSection {
+  background: black;
+  width: 10rem;
+  // height: fit-content;
+  text-align: center;
+}
+
+.label {
+  color: white;
+  margin: 0.25rem 0;
+}
+
+.timeDigits {
+  font-family: 'digital';
+  color: red;
+  font-size: 10rem;
+  line-height: 100%;
+  margin: 0;
+}
+
+.timeSeparator {
+  font-size: 10rem;
+  line-height: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .timeDigits {
+    font-family: 'digital';
+    color: red;
+    font-size: 5rem;
+    line-height: 100%;
+    margin: 0;
+  }
+
+  .timeSeparator {
+    font-size: 5rem;
+    line-height: 5rem;
+    max-width: 5%;
+    align-self: center;
+  }
+}

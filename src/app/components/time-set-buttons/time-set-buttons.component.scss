@@ -1,0 +1,48 @@
+.buttonsWrapper {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding-bottom: 5rem;
+}
+
+.buttonsCard {
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.decrementButtons,
+.incrementButtons,
+.resetTimeButton,
+.worldTimeButtons {
+  display: flex;
+  flex-direction: column;
+  border: solid 5px black;
+  margin: 0 2rem;
+  align-items: center;
+  text-align: center;
+  max-width: 12rem;
+  padding: 1rem;
+}
+
+.timeButton {
+  width: 10rem;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .buttonsCard {
+    flex-direction: column;
+  }
+
+  .decrementButtons,
+  .incrementButtons,
+  .resetTimeButton,
+  .worldTimeButtons {
+    margin-top: 1rem;
+  }
+}
